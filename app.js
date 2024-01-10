@@ -5,7 +5,7 @@
 // paragrafo.innerHTML = 'Escolha um número entre 1 e 10';
 
 let listaDeNumerosSorteados = []; // Criamos uma variável do tipo array para armazenar os números sorteados e criar uma lista com eles, com o objetivo de evitar repetição na geração do número aleatório.
-let numeroLimite = 50; // Criamos uma variável para sistematizar no código a quantidade de números que podem ser sorteados.
+let numeroLimite = 100; // Criamos uma variável para sistematizar no código a quantidade de números que podem ser sorteados.
 let numeroSecreto = gerarNumeroAleatorio();
 let tentativas = 1;
 
@@ -17,7 +17,7 @@ function exibirTextoNaTela(tag, texto) { // Observe que os códigos das linhas 1
 
 function exibirMensagemInicial() {
     exibirTextoNaTela('h1', 'Jogo do número secreto'); // O que aconteceu? Criamos a função, nomeamos genericamente os campos que gostaríamos de mudar de acordo com a execução da função, indicamos estes campos dentro dela e inserimos o código de forma genérica para ser executado de acordo com os parâmetros informados. Veremos que bastará informar a tag e o texto dentro dos parênteses da função para que ela execute corretamente. 
-    exibirTextoNaTela('p', 'Escolha um número entre 1 e 50');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 e 100');
 }
 
 exibirMensagemInicial();
